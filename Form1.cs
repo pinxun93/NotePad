@@ -53,7 +53,7 @@ namespace NotePad
                     //// 關閉資料流與讀取資料流
                     //fileStream.Close();
                     //streamReader.Close();
-
+                   
                     // 使用 using 與 FileStream 打開檔案
                     using (FileStream fileStream = new FileStream(selectedFileName, FileMode.Open, FileAccess.Read))
                     {
