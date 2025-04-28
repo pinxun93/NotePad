@@ -65,7 +65,7 @@ namespace NotePad
                         }
                     }
 
-                    //// 更為簡單的做法，將檔案內容顯示到 RichTextBox 中(第三種作法)
+                    //// 更為簡單的做法，將檔案內容顯示到 RichTextBox 中(第三種作法，易出錯)
                     //string fileContent = File.ReadAllText(selectedFileName);
                     //rtbText.Text = fileContent;
                 }
@@ -97,6 +97,7 @@ namespace NotePad
 
             //建立 FileStream 物件
             FileStream fileStream = null;
+
             // 檢查使用者是否選擇了檔案
             if (result == DialogResult.OK)
             {
