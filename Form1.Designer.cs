@@ -34,6 +34,8 @@ namespace NotePad
             this.rtbText = new System.Windows.Forms.RichTextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.listUndo = new System.Windows.Forms.ListBox();
+            this.btnUndo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnOpen
@@ -65,7 +67,7 @@ namespace NotePad
             // 
             this.rtbText.Location = new System.Drawing.Point(33, 60);
             this.rtbText.Name = "rtbText";
-            this.rtbText.Size = new System.Drawing.Size(784, 406);
+            this.rtbText.Size = new System.Drawing.Size(603, 406);
             this.rtbText.TabIndex = 2;
             this.rtbText.Text = "";
             this.rtbText.TextChanged += new System.EventHandler(this.rtbText_TextChanged);
@@ -74,11 +76,34 @@ namespace NotePad
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // listUndo
+            // 
+            this.listUndo.FormattingEnabled = true;
+            this.listUndo.ItemHeight = 15;
+            this.listUndo.Location = new System.Drawing.Point(642, 60);
+            this.listUndo.Name = "listUndo";
+            this.listUndo.Size = new System.Drawing.Size(188, 409);
+            this.listUndo.TabIndex = 4;
+            // 
+            // btnUndo
+            // 
+            this.btnUndo.BackColor = System.Drawing.SystemColors.Info;
+            this.btnUndo.Font = new System.Drawing.Font("新細明體", 15F);
+            this.btnUndo.Location = new System.Drawing.Point(267, 12);
+            this.btnUndo.Name = "btnUndo";
+            this.btnUndo.Size = new System.Drawing.Size(109, 42);
+            this.btnUndo.TabIndex = 5;
+            this.btnUndo.Text = "還原";
+            this.btnUndo.UseVisualStyleBackColor = false;
+            this.btnUndo.Click += new System.EventHandler(this.btnUndo_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(842, 488);
+            this.Controls.Add(this.btnUndo);
+            this.Controls.Add(this.listUndo);
             this.Controls.Add(this.rtbText);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnOpen);
@@ -95,6 +120,8 @@ namespace NotePad
         private System.Windows.Forms.RichTextBox rtbText;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.ListBox listUndo;
+        private System.Windows.Forms.Button btnUndo;
     }
 }
 
