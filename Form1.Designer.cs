@@ -49,7 +49,7 @@ namespace NotePad
             this.btnOpen.ForeColor = System.Drawing.Color.Black;
             this.btnOpen.Location = new System.Drawing.Point(642, 55);
             this.btnOpen.Name = "btnOpen";
-            this.btnOpen.Size = new System.Drawing.Size(156, 42);
+            this.btnOpen.Size = new System.Drawing.Size(188, 42);
             this.btnOpen.TabIndex = 0;
             this.btnOpen.Text = "開啟檔案";
             this.btnOpen.UseVisualStyleBackColor = false;
@@ -61,7 +61,7 @@ namespace NotePad
             this.btnSave.Font = new System.Drawing.Font("新細明體", 15F);
             this.btnSave.Location = new System.Drawing.Point(642, 103);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(156, 42);
+            this.btnSave.Size = new System.Drawing.Size(188, 42);
             this.btnSave.TabIndex = 1;
             this.btnSave.Text = "存檔";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -69,9 +69,9 @@ namespace NotePad
             // 
             // rtbText
             // 
-            this.rtbText.Location = new System.Drawing.Point(33, 60);
+            this.rtbText.Location = new System.Drawing.Point(12, 60);
             this.rtbText.Name = "rtbText";
-            this.rtbText.Size = new System.Drawing.Size(603, 438);
+            this.rtbText.Size = new System.Drawing.Size(624, 486);
             this.rtbText.TabIndex = 2;
             this.rtbText.Text = "";
             this.rtbText.TextChanged += new System.EventHandler(this.rtbText_TextChanged);
@@ -86,7 +86,7 @@ namespace NotePad
             this.listUndo.ItemHeight = 15;
             this.listUndo.Location = new System.Drawing.Point(642, 252);
             this.listUndo.Name = "listUndo";
-            this.listUndo.Size = new System.Drawing.Size(188, 244);
+            this.listUndo.Size = new System.Drawing.Size(188, 289);
             this.listUndo.TabIndex = 4;
             // 
             // btnUndo
@@ -95,7 +95,7 @@ namespace NotePad
             this.btnUndo.Font = new System.Drawing.Font("新細明體", 15F);
             this.btnUndo.Location = new System.Drawing.Point(642, 151);
             this.btnUndo.Name = "btnUndo";
-            this.btnUndo.Size = new System.Drawing.Size(156, 42);
+            this.btnUndo.Size = new System.Drawing.Size(188, 42);
             this.btnUndo.TabIndex = 5;
             this.btnUndo.Text = "復原上一步";
             this.btnUndo.UseVisualStyleBackColor = false;
@@ -107,7 +107,7 @@ namespace NotePad
             this.btnRedo.Font = new System.Drawing.Font("新細明體", 15F);
             this.btnRedo.Location = new System.Drawing.Point(642, 199);
             this.btnRedo.Name = "btnRedo";
-            this.btnRedo.Size = new System.Drawing.Size(156, 42);
+            this.btnRedo.Size = new System.Drawing.Size(188, 42);
             this.btnRedo.TabIndex = 6;
             this.btnRedo.Text = "重做下一步";
             this.btnRedo.UseVisualStyleBackColor = false;
@@ -115,33 +115,37 @@ namespace NotePad
             // 
             // comboBoxFont
             // 
+            this.comboBoxFont.Font = new System.Drawing.Font("新細明體", 15F);
             this.comboBoxFont.FormattingEnabled = true;
-            this.comboBoxFont.Location = new System.Drawing.Point(33, 22);
+            this.comboBoxFont.Location = new System.Drawing.Point(12, 21);
             this.comboBoxFont.Name = "comboBoxFont";
-            this.comboBoxFont.Size = new System.Drawing.Size(121, 23);
+            this.comboBoxFont.Size = new System.Drawing.Size(233, 33);
             this.comboBoxFont.TabIndex = 7;
+            this.comboBoxFont.SelectedIndexChanged += new System.EventHandler(this.comboBoxFont_SelectedIndexChanged);
             // 
             // comboBoxSize
             // 
+            this.comboBoxSize.Font = new System.Drawing.Font("新細明體", 15F);
             this.comboBoxSize.FormattingEnabled = true;
-            this.comboBoxSize.Location = new System.Drawing.Point(178, 22);
+            this.comboBoxSize.Location = new System.Drawing.Point(251, 21);
             this.comboBoxSize.Name = "comboBoxSize";
-            this.comboBoxSize.Size = new System.Drawing.Size(121, 23);
+            this.comboBoxSize.Size = new System.Drawing.Size(97, 33);
             this.comboBoxSize.TabIndex = 8;
             // 
             // comboBoxStyle
             // 
+            this.comboBoxStyle.Font = new System.Drawing.Font("新細明體", 15F);
             this.comboBoxStyle.FormattingEnabled = true;
-            this.comboBoxStyle.Location = new System.Drawing.Point(327, 22);
+            this.comboBoxStyle.Location = new System.Drawing.Point(354, 21);
             this.comboBoxStyle.Name = "comboBoxStyle";
-            this.comboBoxStyle.Size = new System.Drawing.Size(121, 23);
+            this.comboBoxStyle.Size = new System.Drawing.Size(134, 33);
             this.comboBoxStyle.TabIndex = 9;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(842, 510);
+            this.ClientSize = new System.Drawing.Size(842, 558);
             this.Controls.Add(this.comboBoxStyle);
             this.Controls.Add(this.comboBoxSize);
             this.Controls.Add(this.comboBoxFont);
