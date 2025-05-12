@@ -131,6 +131,7 @@ namespace NotePad
             this.comboBoxSize.Name = "comboBoxSize";
             this.comboBoxSize.Size = new System.Drawing.Size(97, 33);
             this.comboBoxSize.TabIndex = 8;
+            this.comboBoxSize.SelectedValueChanged += new System.EventHandler(this.comboBoxFont_SelectedIndexChanged);
             // 
             // comboBoxStyle
             // 
@@ -140,6 +141,7 @@ namespace NotePad
             this.comboBoxStyle.Name = "comboBoxStyle";
             this.comboBoxStyle.Size = new System.Drawing.Size(134, 33);
             this.comboBoxStyle.TabIndex = 9;
+            this.comboBoxStyle.SelectedValueChanged += new System.EventHandler(this.comboBoxFont_SelectedIndexChanged);
             // 
             // Form1
             // 
